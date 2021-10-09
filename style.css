@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    padding: 2rem;
+    line-height: 1.5;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+btn{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+}
+
+i{
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+i:hover{
+    color: var(--magenta);
+    border: 1px solid var(--magenta);
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background: url('images/bg-mobile.svg') var(--violet) no-repeat;
+        background-size: contain;
+        text-align: center;
+    }
+
+    header{
+        text-align: left;
+    }
+
+    .logo{
+        max-width: 50%;
+    }
+
+    main{
+        padding: 4rem 0;
+    }
+
+    .illustration{
+        max-width: 90%;
+        padding-bottom: 4rem;
+    }
+
+    h1, p{
+        padding-bottom: 2.5rem;
+    }
+
+    .btn{
+        padding: 0.7rem 5.5rem;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        color: hsla(257, 40%, 49%, 0.493);
+        background: white;
+        box-shadow: 0 3px hsla(0, 0%, 2%, 0.226);
+    }
+    
+    .btn:hover{
+        background: var(--magenta);
+        color: white;
+        box-shadow: 0 5px hsla(0, 0%, 2%, 0.226);
+    }
+
+    ul{
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    body{
+        background: url('images/bg-desktop.svg') var(--violet) no-repeat;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .illustration{
+        max-width: 50vw;
+    }
+
+    .text-box{
+        padding: 1.5rem 0 0 2rem;
+    }
+
+    h1, p{
+        padding-bottom: 0.5rem;
+    }
+
+    .btn{
+        padding: 0.7rem 3.5rem;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        color: hsla(257, 40%, 49%, 0.493);
+        background: white;
+        box-shadow: 0 3px hsla(0, 0%, 2%, 0.226);
+    }
+    
+    .btn:hover{
+        background: var(--magenta);
+        color: white;
+        box-shadow: 0 5px hsla(0, 0%, 2%, 0.226);
+    }
+
+    ul{
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body{
+        background: url('images/bg-desktop.svg') var(--violet) no-repeat;
+    }
+
+    .illustration{
+        max-width: 50vw;
+    }
+
+    .text-box{
+        padding: 3rem 0 0 2.5rem;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    h1, p{
+        padding-bottom: 1.5rem;
+    }
+
+    .btn{
+        padding: 0.7rem 3.5rem;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        color: hsla(257, 40%, 49%, 0.493);
+        background: white;
+        box-shadow: 0 3px hsla(0, 0%, 2%, 0.226);
+    }
+    
+    .btn:hover{
+        background: var(--magenta);
+        color: white;
+        box-shadow: 0 5px hsla(0, 0%, 2%, 0.226);
+    }
+
+    ul{
+        justify-content: flex-end;
+    }
+}
